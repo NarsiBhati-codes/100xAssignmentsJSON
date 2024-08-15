@@ -1,0 +1,6 @@
+{
+  "title": "User Greeting Code Example",
+  "description": "This code demonstrates a simple JavaScript function that greets a user by name and displays their age.",
+  "code": "const user = {\n  name: \"Narsi\",\n  age: 23,\n};\n\nfunction greet(user) {\n  console.log(`Hi ${user.name} you age is this : ${user.age} `);\n}\n\ngreet(user);",
+  "output": "Hi Narsi, your age is this: 23"
+}
