@@ -1,0 +1,6 @@
+{
+  "title": "User Greeting and Voting Eligibility Code Example",
+  "description": "This code demonstrates a JavaScript function that greets a user by name, displays their age, and checks if they are eligible to vote based on their age and gender.",
+  "code": "const user = {\n  name: \"Narsi\",\n  age: 23,\n  gender: \"male\"\n};\n\nfunction canVote(age) {\n  return age >= 18;\n}\n\nfunction greet(user) {\n  let vote = canVote(user.age);\n\n  if(user.gender === 'male') {\n    console.log(`Hi, Mr ${user.name}, your age is: ${user.age}. ${vote ? 'You can vote.' : 'You cannot vote.'}`);\n  } else if (user.gender === 'female') {\n    console.log(`Hi, Mrs ${user.name}, your age is: ${user.age}. ${vote ? 'You can vote.' : 'You cannot vote.'}`);\n  } else {\n    console.log(`Hi, ${user.name}, your age is: ${user.age}. ${vote ? 'You can vote.' : 'You cannot vote.'}`);\n  }\n}\n\ngreet(user);",
+  "output": "Hi, Mr Narsi, your age is: 23. You can vote."
+}
