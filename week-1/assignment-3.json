@@ -1,0 +1,7 @@
+{
+    "title": "Filter Even Numbers from an Array Example",
+    "description": "This code demonstrates a JavaScript function that filters out even numbers from an array using the filter method.",
+    "code": "let numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\n\nfunction getEvenNumbers(numberArray) {\n  return numberArray.filter((number) => (number % 2 === 0 ? true : false));\n}\n\nconsole.log(`These are even numbers: ${getEvenNumbers(numberArray)}`);",
+    "output": "These are even numbers: 2,4,6,8,10"
+  }
+  
