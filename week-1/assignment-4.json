@@ -1,0 +1,7 @@
+{
+    "title": "Filter Users Based on Age Eligibility",
+    "description": "This code demonstrates a JavaScript function that filters an array of users to determine who is above 18 years old and eligible to vote.",
+    "code": "const users = [\n  {\n    name: \"Harkirat\",\n    age: 21,\n  },\n  {\n    name: \"Raman\",\n    age: 22,\n  },\n  {\n    name: \"Manu\",\n    age: 17,\n  },\n];\n\nfunction ageGreaterThen18(users) {\n  return users.filter((user) => user.age > 18);\n}\n\nconsole.log(ageGreaterThen18(users));",
+    "output": "[ { name: 'Harkirat', age: 21 }, { name: 'Raman', age: 22 } ]"
+  }
+  
