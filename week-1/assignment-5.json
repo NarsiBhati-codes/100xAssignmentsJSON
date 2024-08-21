@@ -1,0 +1,7 @@
+{
+    "title": "Filter Male Users Over 18 Years Old",
+    "description": "This code demonstrates a JavaScript function that filters an array of users to select only those who are male and over 18 years old.",
+    "code": "const users = [\n  {\n    name: \"Harkirat\",\n    age: 21,\n    gender: \"male\",\n  },\n  {\n    name: \"Raman\",\n    age: 22,\n    gender: \"male\",\n  },\n  {\n    name: \"Manu\",\n    age: 17,\n    gender: \"female\",\n  },\n  {\n    name: \"Ramesh\",\n    age: 19,\n    gender: \"male\",\n  },\n];\n\nfunction ageGreaterThen18AndMale(users) {\n  return users.filter((user) => user.age > 18 && user.gender === \"male\");\n}\n\nconsole.log(ageGreaterThen18AndMale(users));",
+    "output": "[ { name: 'Harkirat', age: 21, gender: 'male' }, { name: 'Raman', age: 22, gender: 'male' }, { name: 'Ramesh', age: 19, gender: 'male' } ]"
+  }
+  
